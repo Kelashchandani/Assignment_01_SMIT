@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_05</title>
+</head>
+
+<body>
+    <div id="myDiv"></div>
+    <script>
+        // let change = (elem, bg_c)=>{
+        //     let para = document.createElement("p");
+        //     document.body.appendChild(para).innerHTML= "This is paragraph"
+        //     console.log(para);
+
+        //     function elem (){
+        //        let result = para.innerText.replace("This", " that");
+        //     }
+        //     elem()
+        //     function bg_c (){
+        //     para.style.backgroundColor = "black";
+        //     para.style.color= "white";
+        //     }
+        //     bg_c();
+
+        // }
+        // change();
+
+        // Second way as you said Sir
+        function changeBackgroundColor(element, color) {
+            element.style.backgroundColor = color;
+            
+        }
+
+        
+        var myDiv = document.getElementById("myDiv");
+        myDiv.innerText = "This is element you can create it";
+        myDiv.style.color= "white"
+        changeBackgroundColor(myDiv, "blue");
+    </script>
+</body>
+
+</html>
