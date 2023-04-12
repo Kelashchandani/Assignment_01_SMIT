@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="add1()">button</button>
+<body>
+    <script>
+    //  let add = (string) =>{
+    //     return string;
+    //     // let para = document.createElement('p');
+    //     // para.innerHTML = ""
+    //     // document.body.appendChild(para);
+    //     // console.log(para)
+    //  }
+
+    // // console.log (add("Helo world"));
+    // document.write(add("Hello world"));
+
+
+    // // Sir I understand as write both
+
+    // let add1 = () =>{
+       
+    //     let para = document.createElement('p');
+    //     para.innerHTML = "This is new paragraph"
+    //     document.body.appendChild(para);
+    //     console.log(para)
+    //  }
+    //  add1();
+
+
+
+// this is third way to
+function addParagraph(text) {
+  // create a new paragraph element
+  var paragraph = document.createElement("p");
+  // set the text content of the paragraph element
+  paragraph.textContent = text;
+  // get the body element of the HTML document
+//   var body = document.getElementsByTagName("body")[0]; // catching the first element
+  // append the paragraph element to the body element
+  document.body.appendChild(paragraph);
+}
+
+addParagraph("This is a new paragraph!");
+addParagraph("This is a new paragraph!");
+
+
+    </script>
+</body>
+</html>

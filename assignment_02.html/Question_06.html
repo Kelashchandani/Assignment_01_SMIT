@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_6</title>
+</head>
+
+<body>
+    <script>
+        function saveToLocalStorage(key, obj) {
+            localStorage.setItem(key, JSON.stringify(obj));
+        }
+        const myObj = { name: 'John', age: 30 };
+        saveToLocalStorage('myKey', myObj);
+
+        const retrievedObj = JSON.parse(localStorage.getItem('myKey'));
+        console.log(retrievedObj); // { name: 'John', age: 30 }
+
+    </script>
+</body>
+
+</html>
